@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0444D739A83A751376CEC931 /* Pods_Fireshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493B3BE811FF157E2756220 /* Pods_Fireshot.framework */; };
 		AFB850E820D2753C000C2170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB850E720D2753C000C2170 /* AppDelegate.swift */; };
 		AFB850EA20D2753C000C2170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB850E920D2753C000C2170 /* ViewController.swift */; };
 		AFB850EC20D2753C000C2170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB850EB20D2753C000C2170 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8493B3BE811FF157E2756220 /* Pods_Fireshot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fireshot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BD429546C78DA4CE64B774 /* Pods-Fireshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireshot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fireshot/Pods-Fireshot.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB850E420D2753C000C2170 /* Fireshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fireshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB850E720D2753C000C2170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB850E920D2753C000C2170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		AFB850EE20D2753C000C2170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFB850F020D2753C000C2170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB850F120D2753C000C2170 /* Fireshot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fireshot.entitlements; sourceTree = "<group>"; };
+		ECA3A5CC58BE654959E8297C /* Pods-Fireshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireshot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fireshot/Pods-Fireshot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0444D739A83A751376CEC931 /* Pods_Fireshot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		383800ABA6630A87D360AE15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92BD429546C78DA4CE64B774 /* Pods-Fireshot.debug.xcconfig */,
+				ECA3A5CC58BE654959E8297C /* Pods-Fireshot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C45CF8A1A55E28AC86954F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8493B3BE811FF157E2756220 /* Pods_Fireshot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFB850DB20D2753C000C2170 = {
 			isa = PBXGroup;
 			children = (
 				AFB850E620D2753C000C2170 /* Fireshot */,
 				AFB850E520D2753C000C2170 /* Products */,
+				383800ABA6630A87D360AE15 /* Pods */,
+				8C45CF8A1A55E28AC86954F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB850F420D2753C000C2170 /* Build configuration list for PBXNativeTarget "Fireshot" */;
 			buildPhases = (
+				AD1414AA18592FCCE59F45A1 /* [CP] Check Pods Manifest.lock */,
 				AFB850E020D2753C000C2170 /* Sources */,
 				AFB850E120D2753C000C2170 /* Frameworks */,
 				AFB850E220D2753C000C2170 /* Resources */,
+				A17D68B6ADA8E6273E83D386 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,6 +154,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A17D68B6ADA8E6273E83D386 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fireshot/Pods-Fireshot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fireshot/Pods-Fireshot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1414AA18592FCCE59F45A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fireshot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFB850E020D2753C000C2170 /* Sources */ = {
@@ -201,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -252,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -261,6 +330,7 @@
 		};
 		AFB850F520D2753C000C2170 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BD429546C78DA4CE64B774 /* Pods-Fireshot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Fireshot/Fireshot.entitlements;
@@ -276,6 +346,7 @@
 		};
 		AFB850F620D2753C000C2170 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA3A5CC58BE654959E8297C /* Pods-Fireshot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Fireshot/Fireshot.entitlements;
