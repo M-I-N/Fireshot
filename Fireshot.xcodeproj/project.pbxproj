@@ -9,9 +9,19 @@
 /* Begin PBXBuildFile section */
 		0444D739A83A751376CEC931 /* Pods_Fireshot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8493B3BE811FF157E2756220 /* Pods_Fireshot.framework */; };
 		AFB850E820D2753C000C2170 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB850E720D2753C000C2170 /* AppDelegate.swift */; };
-		AFB850EA20D2753C000C2170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB850E920D2753C000C2170 /* ViewController.swift */; };
 		AFB850EC20D2753C000C2170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB850EB20D2753C000C2170 /* Assets.xcassets */; };
 		AFB850EF20D2753C000C2170 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB850ED20D2753C000C2170 /* Main.storyboard */; };
+		AFB8511C20D279D9000C2170 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8510D20D279B9000C2170 /* LoginViewController.swift */; };
+		AFB8511D20D279DC000C2170 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8510E20D279B9000C2170 /* RegisterViewController.swift */; };
+		AFB8511E20D279DE000C2170 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8510F20D279B9000C2170 /* ViewController.swift */; };
+		AFB8511F20D279E1000C2170 /* Fireshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8511120D279B9000C2170 /* Fireshot.swift */; };
+		AFB8512020D279E3000C2170 /* ScreenRecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8511220D279B9000C2170 /* ScreenRecoder.swift */; };
+		AFB8512120D279E7000C2170 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8510B20D279B9000C2170 /* Shot.swift */; };
+		AFB8512220D279ED000C2170 /* FileDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8511420D279B9000C2170 /* FileDropView.swift */; };
+		AFB8512320D279F0000C2170 /* shotTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB8511520D279B9000C2170 /* shotTableCell.swift */; };
+		AFB8512420D27A46000C2170 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB8511920D279BA000C2170 /* LoginViewController.xib */; };
+		AFB8512520D27A49000C2170 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB8511A20D279BA000C2170 /* RegisterViewController.xib */; };
+		AFB8512620D27A4C000C2170 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFB8511B20D279BA000C2170 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,11 +29,22 @@
 		92BD429546C78DA4CE64B774 /* Pods-Fireshot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireshot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fireshot/Pods-Fireshot.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB850E420D2753C000C2170 /* Fireshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fireshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB850E720D2753C000C2170 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFB850E920D2753C000C2170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AFB850EB20D2753C000C2170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB850EE20D2753C000C2170 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFB850F020D2753C000C2170 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB850F120D2753C000C2170 /* Fireshot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fireshot.entitlements; sourceTree = "<group>"; };
+		AFB8510920D278C7000C2170 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AFB8510B20D279B9000C2170 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		AFB8510D20D279B9000C2170 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AFB8510E20D279B9000C2170 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AFB8510F20D279B9000C2170 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AFB8511120D279B9000C2170 /* Fireshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fireshot.swift; sourceTree = "<group>"; };
+		AFB8511220D279B9000C2170 /* ScreenRecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecoder.swift; sourceTree = "<group>"; };
+		AFB8511420D279B9000C2170 /* FileDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDropView.swift; sourceTree = "<group>"; };
+		AFB8511520D279B9000C2170 /* shotTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shotTableCell.swift; sourceTree = "<group>"; };
+		AFB8511920D279BA000C2170 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		AFB8511A20D279BA000C2170 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		AFB8511B20D279BA000C2170 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		ECA3A5CC58BE654959E8297C /* Pods-Fireshot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fireshot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fireshot/Pods-Fireshot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,14 +98,68 @@
 		AFB850E620D2753C000C2170 /* Fireshot */ = {
 			isa = PBXGroup;
 			children = (
+				AFB8510C20D279B9000C2170 /* controller */,
+				AFB8511020D279B9000C2170 /* helper */,
+				AFB8511620D279BA000C2170 /* layout */,
+				AFB8510A20D279B9000C2170 /* model */,
+				AFB8511320D279B9000C2170 /* view */,
 				AFB850E720D2753C000C2170 /* AppDelegate.swift */,
-				AFB850E920D2753C000C2170 /* ViewController.swift */,
 				AFB850EB20D2753C000C2170 /* Assets.xcassets */,
 				AFB850ED20D2753C000C2170 /* Main.storyboard */,
 				AFB850F020D2753C000C2170 /* Info.plist */,
+				AFB8510920D278C7000C2170 /* GoogleService-Info.plist */,
 				AFB850F120D2753C000C2170 /* Fireshot.entitlements */,
 			);
 			path = Fireshot;
+			sourceTree = "<group>";
+		};
+		AFB8510A20D279B9000C2170 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8510B20D279B9000C2170 /* Shot.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AFB8510C20D279B9000C2170 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8510D20D279B9000C2170 /* LoginViewController.swift */,
+				AFB8510E20D279B9000C2170 /* RegisterViewController.swift */,
+				AFB8510F20D279B9000C2170 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AFB8511020D279B9000C2170 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8511120D279B9000C2170 /* Fireshot.swift */,
+				AFB8511220D279B9000C2170 /* ScreenRecoder.swift */,
+			);
+			name = helper;
+			path = ../../../fireshot/Fireshot/helper;
+			sourceTree = "<group>";
+		};
+		AFB8511320D279B9000C2170 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8511420D279B9000C2170 /* FileDropView.swift */,
+				AFB8511520D279B9000C2170 /* shotTableCell.swift */,
+			);
+			name = view;
+			path = ../../../fireshot/Fireshot/view;
+			sourceTree = "<group>";
+		};
+		AFB8511620D279BA000C2170 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8511920D279BA000C2170 /* LoginViewController.xib */,
+				AFB8511A20D279BA000C2170 /* RegisterViewController.xib */,
+				AFB8511B20D279BA000C2170 /* ViewController.xib */,
+			);
+			name = layout;
+			path = ../../../fireshot/Fireshot/layout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB8512620D27A4C000C2170 /* ViewController.xib in Resources */,
 				AFB850EC20D2753C000C2170 /* Assets.xcassets in Resources */,
 				AFB850EF20D2753C000C2170 /* Main.storyboard in Resources */,
+				AFB8512420D27A46000C2170 /* LoginViewController.xib in Resources */,
+				AFB8512520D27A49000C2170 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFB850EA20D2753C000C2170 /* ViewController.swift in Sources */,
+				AFB8511E20D279DE000C2170 /* ViewController.swift in Sources */,
+				AFB8511C20D279D9000C2170 /* LoginViewController.swift in Sources */,
+				AFB8512120D279E7000C2170 /* Shot.swift in Sources */,
+				AFB8512320D279F0000C2170 /* shotTableCell.swift in Sources */,
+				AFB8511F20D279E1000C2170 /* Fireshot.swift in Sources */,
+				AFB8512220D279ED000C2170 /* FileDropView.swift in Sources */,
 				AFB850E820D2753C000C2170 /* AppDelegate.swift in Sources */,
+				AFB8511D20D279DC000C2170 /* RegisterViewController.swift in Sources */,
+				AFB8512020D279E3000C2170 /* ScreenRecoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -321,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
